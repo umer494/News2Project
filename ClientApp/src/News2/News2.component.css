@@ -1,0 +1,25 @@
+body {
+  background-image: url('newsy.png');
+}
+table {
+  background-color: black;
+  border: double;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  border-collapse: collapse;
+}
+
+td {
+  border: 3px solid white;
+  padding: 5px;
+  color: yellow;
+}
+
+th {
+  border: 3px solid gray;
+  padding: 5px;
+  color: white;
+}
+
+
+

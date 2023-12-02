@@ -1,0 +1,42 @@
+<p style="text-align: center;background-color:gainsboro; color: black; font-size: x-large;"><b>FAVOURITE NEWS </b></p>
+<body>
+  <p *ngIf="!excans"><em>Loading....</em></p>
+  <p><em>{{excans.length}}</em></p>
+  <p style="text-align:center;background-color:red;" > <button style="color:white;background-color:black;" (click)="getNewsFromServer()">Load More Favourites</button></p>
+
+  <table align="center" *ngIf="excans">
+
+    <thead>
+      <tr>
+        <th>NewsPaperId</th>
+        <th>NewsPaper Name</th>
+        <th>NewsPaper Country</th>
+        <th>NewsPaper Language</th>
+        <th>Newspaper Url</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let e of excans;">
+        <tr>
+          <td>{{e.newsPaperId}}</td>
+          <td>{{e.newsPaperName}}</td>
+          <td>{{e.newsPaperCountry}}</td>
+          <td>{{e.newsPaperLanguage}}</td>
+          <td>
+            <a href={{e.newsPaperUrl}}>{{e.newsPaperUrl}}</a>
+          </td>
+        </tr>
+      </ng-container>
+      <tr *ngIf="!excans">
+        <td colspan="5">
+          Loading Data please wait....
+        </td>
+      </tr>
+      <tr *ngIf="excans.length==0">
+        <td colspan="5">
+          No News Found
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>

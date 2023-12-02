@@ -1,0 +1,45 @@
+body{
+    background-image:url('news.png');
+}
+
+table {
+    
+    background-color:darksalmon;
+    border:double;
+    border-block-color:blue;
+  
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  border-collapse:collapse;
+}
+
+td {
+  border: 3px solid white;
+  padding: 5px;
+  color:black;
+}
+
+th {
+  border: 3px solid black;
+  padding: 5px;
+  color:darkviolet;
+  ;
+}
+input[type=submit] {
+  background-color: Black;
+  border: 3px solid red;
+  color: white;
+  padding: 18px 36px;
+  text-decoration: none;
+  margin: 5px 4px;
+  cursor: pointer;
+  align-content:center;
+  
+}
+caption{
+    align-self:center;
+    
+}
+body{
+    background-color:aqua;
+}
